@@ -1,0 +1,68 @@
+body{
+    margin:0;
+    box-sizing: border-box;
+
+}
+
+.card{
+    width:320px;
+    height:350px;
+    background-color: rgb(245, 243, 243);
+    border-radius:14px;
+    margin:100px auto;
+    box-shadow: 5px 5px 5px 5px rgb(245, 243, 243);
+    opacity: 0;
+    animation-name: loadingvision ;
+    animation-duration: 6s;
+}
+
+.upper-part{
+    height: 50%;
+}
+.lower-part{
+    height:50%;
+    margin-left:10px;
+    border:1px solid white;
+    background-color: white;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+}
+
+.up-part{
+    height:30px;
+    width:90%;
+    background-color:  rgb(245, 243, 243);
+    margin:20px;
+}
+
+.below-part{
+    height:80px;
+    width:90%;
+    background-color:  rgb(245, 243, 243);
+    margin-bottom:20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+
+@keyframes loadingvision{
+
+    0%{
+        opacity: 0.0;
+    }
+    20%{
+        opacity: 0.2;
+    }
+    40%{
+        opacity: 0.4;
+    }
+    60%{
+        opacity: 0.6;
+    }
+    80%{
+        opacity: 0.8;
+    }
+    100%{
+        opacity: 1;
+    }
+}
